@@ -1,0 +1,6 @@
+// Генерируем переменные цветов в root
+:root{
+    @each $i, $color in $colors{
+        --color-#{$i}:#{$color};
+    }
+}

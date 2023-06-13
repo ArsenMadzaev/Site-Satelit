@@ -1,0 +1,43 @@
+// Переменные
+@import "variables";
+// Миксины
+@import "mixins";
+// Сбрасываем стили
+@import "reboot";
+// Сгенерированные классы 
+@import "classes-generation";
+
+@font-face {
+    font-family: 'BaronNeue';
+    src: url(/core/fonts/Baron-Black.otf);
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    background: #fff;
+    font-family: 'BaronNeue';
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.header {
+    margin: 0 auto;
+    z-index: 101;
+    max-width: 1400px;
+    height: 100%;
+    background-image: url(/img/Баннеры/Баннер.png);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 970px) {
+    .header {
+        background-image: url(/img/Баннеры/МобильныйБаннер.png);
+    }
+}
