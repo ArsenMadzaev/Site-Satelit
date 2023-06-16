@@ -48,6 +48,20 @@ main{
         width: 100%;
         z-index: 101;
         justify-content: center;
+
+        &::after{
+            content: '';
+            max-width: 1000px;
+            border-top: 10px $yelloy solid;
+            flex: 1 1 auto;
+        }
+
+        &::before {
+            content: '';
+            width: 100px;
+            border-bottom: 10px $yelloy solid;
+            flex: 1 1 auto;
+        }
         
     }
     

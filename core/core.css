@@ -379,6 +379,18 @@ main {
   z-index: 101;
   justify-content: center;
 }
+.header .header__navbar::after {
+  content: '';
+  max-width: 1000px;
+  border-top: 10px #fcd401 solid;
+  flex: 1 1 auto;
+}
+.header .header__navbar::before {
+  content: '';
+  width: 100px;
+  border-bottom: 10px #fcd401 solid;
+  flex: 1 1 auto;
+}
 .header .header__logo--bottom {
   border-bottom: 10px #fcd401 solid;
 }
