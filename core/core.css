@@ -349,7 +349,7 @@ body {
 }
 
 body {
-  background: #fff;
+  background: #000;
   font-family: 'BaronNeue';
 }
 
@@ -360,15 +360,74 @@ main {
 .header {
   margin: 0 auto;
   z-index: 101;
-  max-width: 1400px;
+  max-width: 100%;
   height: 100%;
   background-image: url(/img/Баннеры/Баннер.png);
-  background-size: 100% 100vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.header .header__navbar {
+  color: #fcd401;
+  display: flex;
+  position: fixed;
+  top: 0;
+  margin-top: 25px;
+  height: 75px;
+  background-color: rgba(238, 10, 10, 0.2);
+  max-width: 100%;
+  width: 100%;
+  z-index: 101;
+  justify-content: center;
+}
+.header .header__logo--bottom {
+  border-bottom: 10px #fcd401 solid;
+}
+.header .header__logo {
+  display: flex;
+}
+.header .header__logo::after {
+  display: flex;
+  content: '';
+  margin: 0 20px;
+  width: 50px;
+  height: 100%;
+  -webkit-transform: skew(-50deg);
+  -moz-transform: skew(-50deg);
+  -o-transform: skew(-50deg);
+  background: #fcd401;
+}
+.header .header__logo .logo {
+  padding: 5px 30px;
+}
 
-@media (max-width: 970px) {
-  .header {
-    background-image: url(/img/Баннеры/МобильныйБаннер.png);
-  }
+.logo {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fcd401;
+}
+
+.navbar {
+  width: 740px;
+  min-width: 550px;
+}
+.navbar .navbar-list {
+  display: flex;
+  border-top: 10px #fcd401 solid;
+  column-gap: 20px;
+  justify-content: center;
+}
+.navbar .navbar-item {
+  padding-top: 5px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 1S00;
+}
+.navbar .navbar-link:hover {
+  display: block;
+  color: aliceblue;
+  transform: scale(1.1);
+  transition: all 0.5s ease 1ms;
+}
+.navbar .navbar-link:not(:hover) {
+  transition: all 1s ease 1ms;
 }

@@ -12,13 +12,14 @@
     src: url(/core/fonts/Baron-Black.otf);
 }
 
+
 html,
 body {
     height: 100%
 }
 
 body {
-    background: #fff;
+    background: $black;
     font-family: 'BaronNeue';
 }
 
@@ -29,15 +30,84 @@ main{
 .header {
     margin: 0 auto;
     z-index: 101;
-    max-width: 1400px;
+    max-width: 100%;
     height: 100%;
     background-image: url(/img/Баннеры/Баннер.png);
-    background-size: 100% 100vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+
+    .header__navbar {
+        color: $yelloy;
+        display: flex;
+        position: fixed;
+        top: 0;
+        margin-top: 25px;
+        height: 75px;
+        background-color: rgba($color: #ee0a0a, $alpha: 0.2);
+        max-width: 100%;
+        width: 100%;
+        z-index: 101;
+        justify-content: center;
+        
+    }
+    
+    .header__logo--bottom{
+        border-bottom: 10px $yelloy solid;
+    }
+    .header__logo{
+        display: flex;
+        &::after{
+            display: flex;
+            content: '';
+            margin: 0 20px;
+            width: 50px;
+            height: 100%;
+            -webkit-transform: skew(-50deg);
+            -moz-transform: skew(-50deg);
+            -o-transform: skew(-50deg);
+            background: $yelloy;
+        }
+        .logo {
+            padding: 5px 30px;
+        }
+    }
+
 }
 
-@media (max-width: 970px) {
-    .header {
-        background-image: url(/img/Баннеры/МобильныйБаннер.png);
+.logo {
+    font-size: 40px;
+    font-weight: 400;
+    color: $yelloy;
+}
+
+.navbar {
+    width: 740px;
+    min-width: 550px;
+    
+    .navbar-list {
+        display: flex;
+        border-top: 10px $yelloy solid;
+        column-gap: 20px;
+        justify-content: center;
+    }
+
+    .navbar-item {
+        padding-top: 5px;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 1S00;
+    }
+
+    .navbar-link {
+        &:hover{
+            display: block;
+            color: aliceblue;
+            transform: scale(1.1);
+            transition: all 0.5s ease 1ms;
+        }
+        
+        &:not(:hover){
+            transition: all 1s ease 1ms;
+        }
     }
 }
