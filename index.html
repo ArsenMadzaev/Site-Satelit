@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="core/core.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 <body>
     <header class="header">
@@ -15,6 +16,19 @@
                 </div>
             </div>
             <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="#" class="navbar-link">главная</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">О компании</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">услуги</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">контакты</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu burger-menu--margin">
+                <span class="burger-menu__bar"></span>
+                <span class="burger-menu__bar"></span>
+                <span class="burger-menu__bar"></span>
+            </button>
+            <nav class="mobile-navbar">
                 <ul class="navbar-list">
                     <li class="navbar-item"><a href="#" class="navbar-link">главная</a></li>
                     <li class="navbar-item"><a href="#" class="navbar-link">О компании</a></li>
@@ -42,5 +56,6 @@
             </article>
         </section>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
