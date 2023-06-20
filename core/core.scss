@@ -85,8 +85,40 @@ main{
         }
     }
 
+    .header__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $yelloy;
+        text-align: center;
+        height: 100%;
+        .header__company {
+            font-size: 110px;
+        }
+
+        .header__slogan {
+            color: aliceblue;
+            font-size: 25px;
+        }
+    }
+
+    .img-container {
+        
+        .header-img {
+            width: 100%;
+            max-width: 720px;
+            height: 85vh;
+        }
+    }
 }
 
+.flex-container {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 .logo {
     font-size: 40px;
     font-weight: 400;
@@ -151,6 +183,15 @@ main{
     margin-right: 30px;
 }
 
+@media (max-width: 1200px)  {
+
+    .img-container {
+        display: none;
+    }
+}
+
+
+
 @media (max-width: 992px)  {
     .navbar {
         display: none;
@@ -212,6 +253,18 @@ main{
         line-height: 50px; 
         font-size: 20px;
     }
+    .header {
+        .header__title {
+            .header__company {
+                font-size: 90px;
+            }
+
+            .header__slogan {
+                color: aliceblue;
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -226,5 +279,33 @@ main{
 
     .burger-menu--margin {
         margin-right: 10px;
+    }
+
+    .header {
+        .header__title {
+            .header__company {
+                font-size: 70px;
+            }
+
+            .header__slogan {
+                color: aliceblue;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) { 
+    .header {
+        .header__title {
+            .header__company {
+                font-size: 55px;
+            }
+
+            .header__slogan {
+                color: aliceblue;
+                font-size: 12px;
+            }
+        }
     }
 }

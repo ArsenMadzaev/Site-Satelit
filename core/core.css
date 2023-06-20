@@ -410,6 +410,34 @@ main {
 .header .header__logo .logo {
   padding: 5px 30px;
 }
+.header .header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fcd401;
+  text-align: center;
+  height: 100%;
+}
+.header .header__title .header__company {
+  font-size: 110px;
+}
+.header .header__title .header__slogan {
+  color: aliceblue;
+  font-size: 25px;
+}
+.header .img-container .header-img {
+  width: 100%;
+  max-width: 720px;
+  height: 85vh;
+}
+
+.flex-container {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 .logo {
   font-size: 40px;
@@ -469,6 +497,11 @@ main {
   margin-right: 30px;
 }
 
+@media (max-width: 1200px) {
+  .img-container {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .navbar {
     display: none;
@@ -518,6 +551,14 @@ main {
     line-height: 50px;
     font-size: 20px;
   }
+
+  .header .header__title .header__company {
+    font-size: 90px;
+  }
+  .header .header__title .header__slogan {
+    color: aliceblue;
+    font-size: 20px;
+  }
 }
 @media (max-width: 576px) {
   .header .header__logo .logo {
@@ -527,5 +568,22 @@ main {
 
   .burger-menu--margin {
     margin-right: 10px;
+  }
+
+  .header .header__title .header__company {
+    font-size: 70px;
+  }
+  .header .header__title .header__slogan {
+    color: aliceblue;
+    font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .header .header__title .header__company {
+    font-size: 55px;
+  }
+  .header .header__title .header__slogan {
+    color: aliceblue;
+    font-size: 12px;
   }
 }
