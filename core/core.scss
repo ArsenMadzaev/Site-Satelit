@@ -404,10 +404,16 @@ main{
 
     .article-description {
         color: aliceblue;
+        font-size: 1rem;
     }
 
     .services-slider--width {
         width: 100%;
+    }
+
+    .services-section__ol {
+        list-style: decimal;
+        padding-left: 15px;
     }
 
 }

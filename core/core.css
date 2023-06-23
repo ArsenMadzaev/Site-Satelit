@@ -659,9 +659,14 @@ main {
 }
 .main .article-description {
   color: aliceblue;
+  font-size: 1rem;
 }
 .main .services-slider--width {
   width: 100%;
+}
+.main .services-section__ol {
+  list-style: decimal;
+  padding-left: 15px;
 }
 
 @media (max-width: 992px) {
