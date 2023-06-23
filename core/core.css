@@ -668,6 +668,104 @@ main {
   list-style: decimal;
   padding-left: 15px;
 }
+.main .form {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  background-color: white;
+  gap: 30px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main .form-section__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 50%;
+}
+.main .section__article--back-img {
+  background-image: url(/img/Баннеры/Баннер2.png);
+  background-size: 100% 100%;
+}
+.main .form-section__img {
+  width: 80%;
+}
+.main .form-conainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.main .form__input {
+  padding: 5px 0;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px black solid;
+}
+.main .form-title {
+  font-size: 1.3rem;
+  background-color: white;
+  width: 65%;
+  text-align: center;
+  margin: 0;
+  padding: 25px 20px;
+  color: black;
+}
+.main .form__label {
+  font-size: 0.9rem;
+  color: black;
+}
+.main .form__button {
+  background-color: #7f2121;
+  color: white;
+  padding: 10px 5px;
+  margin: 0 15px;
+  font-size: 1.3rem;
+  border: 0;
+}
+.main .form__button:hover {
+  transform: scale(0.9);
+  transition: all 1s ease-out;
+}
+.main .form__button:active {
+  background-color: rgba(127, 33, 33, 0.8);
+  transition: none;
+}
+
+.footer::before {
+  display: block;
+  content: '';
+  margin-top: 50px;
+  padding-bottom: 30px;
+  border-top: #fcd401 4px solid;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.footer .footer__container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer .social {
+  display: flex;
+  width: 150px;
+  gap: 20px;
+  padding: 30px 0;
+}
+.footer .contact-info {
+  width: 20%;
+  min-width: 245px;
+}
+.footer .call-number {
+  color: #fcd401;
+}
+.footer .contact-info__compani-info {
+  color: white;
+}
 
 @media (max-width: 992px) {
   .main .article-container {
@@ -731,6 +829,23 @@ main {
   .main .article-container {
     width: 100%;
   }
+  .main .form-section__img-container {
+    display: none;
+  }
+  .main .form-conainer {
+    margin: 10px 0;
+    width: 85%;
+  }
+
+  .footer::before {
+    width: 90%;
+  }
+  .footer .call-number {
+    font-size: 25px;
+  }
+  .footer .contact-info__compani-info {
+    font-size: 15px;
+  }
 }
 @media (max-width: 576px) {
   .main .section-title {
@@ -738,5 +853,25 @@ main {
   }
   .main .slider-container {
     min-width: 200px;
+  }
+  .main .form-conainer {
+    width: 100%;
+  }
+  .main .form-title {
+    width: 90%;
+  }
+  .main .form {
+    width: 90%;
+  }
+
+  .footer .footer_logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer .contact-info {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
   }
 }

@@ -18,9 +18,9 @@
             <nav class="navbar">
                 <ul class="navbar-list">
                     <li class="navbar-item"><a href="#" class="navbar-link">главная</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">О компании</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">услуги</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">контакты</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">О компании</a></li>
+                    <li class="navbar-item"><a href="#services" class="navbar-link">услуги</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">контакты</a></li>
                 </ul>
             </nav>
             <button class="burger-menu burger-menu--margin">
@@ -31,9 +31,9 @@
             <nav class="mobile-navbar">
                 <ul class="navbar-list">
                     <li class="navbar-item"><a href="#" class="navbar-link">главная</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">О компании</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">услуги</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">контакты</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">О компании</a></li>
+                    <li class="navbar-item"><a href="#services" class="navbar-link">услуги</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,6 +49,7 @@
     </header>
     <main class="main">
         <section class="about-section section">
+            <a name="about"></a>
             <h2 class="section-title">компания ооо "сателлит"</h2>
             <article class="section__article">
                 <div class="slider-container about-section__trianle">
@@ -63,6 +64,7 @@
             </article>
         </section>
         <section class="services-section section">
+            <a name="services"></a>
             <h2 class="section-title">услуги "сателлит"</h2>
             <article class="section__article">
                 <div class="article-container services-section__trianle">
@@ -84,12 +86,46 @@
             </article>
         </section>
         <section class="form-section section">
+            <a name="contact"></a>
             <h2 class="section-title">контакты</h2>
-            <article class="section__article">
-            
+            <article class="section__article section__article--back-img">
+                <div class="form-section__img-container">
+                    <img  class="form-section__img" src="img/man.png" alt="Строитель">
+                </div>
+                <div class="form-conainer">
+                    <h6 class="form-title">Запишитесь на встречу</h6>
+                    <form action="" class="form">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Сателлит">
+                        <input type="hidden" name="admin_email" value="satelit@mail.com">
+                        <input type="hidden" name="form_subject" value="Форма обратной связи">
+                        <!-- END Hidden Required Fields -->
+                        <label class="form__label">Введите имя <input class="form__input" type="text" name="Имя" placeholder="Введите имя" required></label>
+                        <label class="form__label">Введите E-mail <input class="form__input" type="text" name="E-mail" placeholder="ivan.ivanov@mail.ru" required></label>
+                        <label class="form__label">Введите номер телефона <input class="form__input" type="text" name="Телефон" placeholder="+7 (999) 999-99-99" required></label>
+                        <button class="form__button">Отправить заявку</button>
+                    </form>
+                </div>
             </article>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer_logo">
+                <img  class="logo" src="" alt="Логотип">
+            </div>
+            <div class="contact-info">
+                <h3 class="call-number">+7 (999) 999-99-99</h3>
+                <p class="contact-info__compani-info">Какая-то информация о контактах, адреса, инн и тд</p>
+            </div>
+            <div class="social">
+                <a class="social-link" href=""><img class="social-img" src="img/social/social-ico-vk.png" alt="vk"></a>
+                <a class="social-link" href=""><img class="social-img" src="img/social/social-ico-inst.png" alt="vk"></a>
+                <a class="social-link" href=""><img class="social-img" src="img/social/social-ico-tvit.png" alt="vk"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
