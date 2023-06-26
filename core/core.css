@@ -373,7 +373,7 @@ main {
   top: 0;
   margin-top: 25px;
   height: 75px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   max-width: 100%;
   width: 100%;
   z-index: 101;
@@ -684,7 +684,7 @@ main {
   width: 50%;
 }
 .main .section__article--back-img {
-  background-image: url(/img/Баннеры/Баннер2.png);
+  background-image: url(../img/Баннеры/Баннер2.png);
   background-size: 100% 100%;
 }
 .main .form-section__img {
