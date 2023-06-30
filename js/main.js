@@ -1,27 +1,22 @@
 const brgMenu = document.querySelector('.burger-menu');
 const mobMenu = document.querySelector('.mobile-navbar');
+const headerItem = document.querySelectorAll('.services-section__list-item');
+const mainContent = document.querySelectorAll('.slider');
+
 
 brgMenu.addEventListener('click', () => {
     mobMenu.classList.toggle('mobile-navbar--open');
 });
 
-$(document).ready(function() {
+for (let item of headerItem){
+    item.addEventListener('click',function(){
+        for(let element of mainContent){
+            element.classList.add('services-slider--hidden')
 
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+        }
+        const content=document.querySelector('#' + item.dataset.tab);
+        content.classList.remove('services-slider--hidden')
 
-});
+    })
+    
+}
