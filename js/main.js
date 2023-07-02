@@ -1,7 +1,7 @@
 const brgMenu = document.querySelector('.burger-menu');
 const mobMenu = document.querySelector('.mobile-navbar');
 const headerItem = document.querySelectorAll('.services-section__list-item');
-const mainContent = document.querySelectorAll('.slider');
+const mainContent = document.querySelectorAll('.services-slider--width');
 
 
 brgMenu.addEventListener('click', () => {
